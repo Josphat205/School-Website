@@ -84,7 +84,6 @@ header {
 }
 
 .program {
-  min-height: 60vh;
   text-align: center;
   padding: 50px 0;
   align-items: center;
@@ -109,11 +108,11 @@ header {
   .program-items {
     display: flex;
     gap: 20px;
-    width: 80%;
+    width: 90%;
     margin: 50px auto;
 
     .program-item {
-      padding: 10px 5px;
+      padding: 10px 10px;
       background-color: #292626;
 
       i {
@@ -144,6 +143,23 @@ header {
 
 .home-pg {
   min-height: 70vh;
+  position: relative;
+
+  .r4 {
+    right: 50%;
+    top: 200px;
+  }
+
+  .r1 {
+    width: 80px;
+    height: 80px;
+  }
+
+  .circle {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+  }
 
   .content-sec {
     display: flex;
@@ -155,14 +171,15 @@ header {
 
       .welcome {
         font-family: $goose;
+        color: $title-color;
 
         h2 {
           font-weight: 800;
-          font-size: 34px;
+          font-size: 28px;
         }
 
         h1 {
-          font-size: 38px;
+          font-size: 32px;
           text-transform: uppercase;
           background-image: linear-gradient(to right, #ec5242, rgb(153, 15, 5));
           -webkit-background-clip: text;
@@ -178,7 +195,7 @@ header {
           font-family: $lato;
           font-weight: 600;
           position: relative;
-          font-size: 28px;
+          font-size: 20px;
         }
 
         span {
@@ -192,7 +209,7 @@ header {
           font-weight: 600;
           line-height: 30px;
           margin-right: 10px;
-          font-size: 25px;
+          font-size: 18px;
         }
       }
     }
@@ -321,6 +338,14 @@ header {
 
   .home-pg {
     margin: 0 auto;
+    .r4{
+   top: 100px;
+   right: 5%;
+    }
+    .r1{
+      width: 200px;
+      height: 200px;
+    }
 
     .content-sec {
       display: flex;
@@ -393,7 +418,4 @@ header {
   }
 }
 
-.swiper {
-  width: 90%;
-  height: 800px;
-}
+

@@ -68,7 +68,6 @@ header nav ul li a:hover {
 }
 
 .program {
-  min-height: 60vh;
   text-align: center;
   padding: 50px 0;
   align-items: center;
@@ -91,11 +90,11 @@ header nav ul li a:hover {
 .program .program-items {
   display: flex;
   gap: 20px;
-  width: 80%;
+  width: 90%;
   margin: 50px auto;
 }
 .program .program-items .program-item {
-  padding: 10px 5px;
+  padding: 10px 10px;
   background-color: #292626;
 }
 .program .program-items .program-item i {
@@ -120,6 +119,20 @@ header nav ul li a:hover {
 
 .home-pg {
   min-height: 70vh;
+  position: relative;
+}
+.home-pg .r4 {
+  right: 50%;
+  top: 200px;
+}
+.home-pg .r1 {
+  width: 80px;
+  height: 80px;
+}
+.home-pg .circle {
+  width: 80px;
+  height: 80px;
+  position: absolute;
 }
 .home-pg .content-sec {
   display: flex;
@@ -131,13 +144,14 @@ header nav ul li a:hover {
 }
 .home-pg .content-sec .descript-sec .welcome {
   font-family: "COCOGOOSE", sans-serif;
+  color: #d62828;
 }
 .home-pg .content-sec .descript-sec .welcome h2 {
   font-weight: 800;
-  font-size: 34px;
+  font-size: 28px;
 }
 .home-pg .content-sec .descript-sec .welcome h1 {
-  font-size: 38px;
+  font-size: 32px;
   text-transform: uppercase;
   background-image: linear-gradient(to right, #ec5242, rgb(153, 15, 5));
   -webkit-background-clip: text;
@@ -151,7 +165,7 @@ header nav ul li a:hover {
   font-family: "Lato", sans-serif;
   font-weight: 600;
   position: relative;
-  font-size: 28px;
+  font-size: 20px;
 }
 .home-pg .content-sec .descript-sec .text-description span {
   position: absolute;
@@ -163,7 +177,7 @@ header nav ul li a:hover {
   font-weight: 600;
   line-height: 30px;
   margin-right: 10px;
-  font-size: 25px;
+  font-size: 18px;
 }
 .home-pg .content-sec .image-sec {
   width: 50%;
@@ -272,6 +286,14 @@ header nav ul li a:hover {
   .home-pg {
     margin: 0 auto;
   }
+  .home-pg .r4 {
+    top: 100px;
+    right: 5%;
+  }
+  .home-pg .r1 {
+    width: 200px;
+    height: 200px;
+  }
   .home-pg .content-sec {
     display: flex;
     flex-direction: column;
@@ -330,10 +352,6 @@ header nav ul li a:hover {
     transform: translateY(0);
     transition: transform 1s;
   }
-}
-.swiper {
-  width: 90%;
-  height: 800px;
 }
 
 /*# sourceMappingURL=style.css.map */
