@@ -12,8 +12,8 @@ body {
 }
 
 section {
-  width: 100%;
-  margin: 30px auto;
+  width: 90%;
+  margin: 20px auto;
 }
 
 img {
@@ -22,11 +22,12 @@ img {
 }
 
 .wrapper {
-  width: 80%;
+  width: 100%;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
   height: auto;
   margin: 0 auto;
   padding: 20px 15px;
-  background-color: #f3f1f1;
+  background-color: #f3f3fa;
 }
 
 header {
@@ -38,7 +39,7 @@ header nav {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   padding: 5px 10px;
 }
@@ -68,6 +69,7 @@ header nav ul li a:hover {
 }
 
 .program {
+  width: 100%;
   text-align: center;
   padding: 50px 0;
   align-items: center;
@@ -88,10 +90,11 @@ header nav ul li a:hover {
   width: 10%;
 }
 .program .program-items {
-  display: flex;
+  display: grid;
+  width: 80%;
+  margin: 20px auto;
   gap: 20px;
-  width: 90%;
-  margin: 50px auto;
+  grid-template-columns: repeat(5, 1fr);
 }
 .program .program-items .program-item {
   padding: 10px 10px;
@@ -135,6 +138,7 @@ header nav ul li a:hover {
   position: absolute;
 }
 .home-pg .content-sec {
+  width: 80%;
   display: flex;
   align-items: center;
   margin: 20px 10px;
@@ -148,10 +152,10 @@ header nav ul li a:hover {
 }
 .home-pg .content-sec .descript-sec .welcome h2 {
   font-weight: 800;
-  font-size: 28px;
+  font-size: 25px;
 }
 .home-pg .content-sec .descript-sec .welcome h1 {
-  font-size: 32px;
+  font-size: 30px;
   text-transform: uppercase;
   background-image: linear-gradient(to right, #ec5242, rgb(153, 15, 5));
   -webkit-background-clip: text;
@@ -165,7 +169,7 @@ header nav ul li a:hover {
   font-family: "Lato", sans-serif;
   font-weight: 600;
   position: relative;
-  font-size: 20px;
+  font-size: 18px;
 }
 .home-pg .content-sec .descript-sec .text-description span {
   position: absolute;
@@ -177,10 +181,176 @@ header nav ul li a:hover {
   font-weight: 600;
   line-height: 30px;
   margin-right: 10px;
-  font-size: 18px;
+  font-size: 16px;
 }
 .home-pg .content-sec .image-sec {
   width: 50%;
+}
+
+.team-section {
+  margin: 50px 0;
+  width: 100%;
+}
+.team-section h2 {
+  text-align: center;
+}
+.team-section h2 span {
+  color: #d62828;
+}
+.team-section .horizon {
+  border: 2px solid #d62828;
+  width: 5%;
+}
+.team-section .team-members {
+  width: 80%;
+  margin: 30px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+.team-section .team-members .team {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.team-section .team-members .team .image-div {
+  position: relative;
+  width: 30%;
+  display: block;
+  z-index: 1;
+  justify-content: center;
+}
+.team-section .team-members .team .image-div .pattern {
+  width: 50px;
+  top: -10px;
+  left: -10px;
+  height: 50px;
+  display: block;
+  position: absolute;
+  z-index: -1;
+}
+.team-section .team-members .team .image-div img {
+  z-index: 1;
+}
+.team-section .team-members .team .image-div .icons {
+  top: 60px;
+  position: absolute;
+  background-color: #d62828;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  padding: 10px 0;
+  display: none;
+}
+.team-section .team-members .team .image-div .icons .fa-brands {
+  text-align: center;
+  padding: 0 5px;
+  color: white;
+}
+.team-section .team-members .team .body-div {
+  width: 70%;
+  text-align: start;
+}
+.team-section .team-members .team .body-div h4 {
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+}
+.team-section .team-members .team .body-div h5 {
+  color: #d62828;
+  font-size: 13px;
+}
+.team-section .team-members .team .body-div .dash {
+  border: 1px solid rgb(179, 171, 171);
+  width: 10%;
+  margin-left: 0;
+}
+.team-section .team-members .team .body-div p {
+  font-size: 12px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+}
+.team-section .see-more {
+  width: 100%;
+  border: 1px solid #8a817c;
+  display: none;
+}
+
+.horizon {
+  border: 1px solid #d62828;
+  width: 5%;
+}
+
+.partners-section {
+  background-color: #1f2421;
+  text-align: center;
+  padding: 20px 0;
+  width: 100%;
+}
+.partners-section h2 {
+  margin: 20px 0;
+  color: #8a817c;
+}
+.partners-section .my-partner {
+  width: 80%;
+  margin: 10px auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.partners-section .my-partner .part1 h3 {
+  color: #8a817c;
+  text-transform: capitalize;
+}
+.partners-section .my-partner .part2 h3 {
+  color: #c5c3c6;
+  text-transform: capitalize;
+}
+.partners-section .my-partner .part3 h3 {
+  color: #8a817c;
+  text-transform: uppercase;
+}
+.partners-section .my-partner .part4 h3 {
+  color: #c5c3c6;
+  text-transform: capitalize;
+}
+.partners-section .my-partner .part5 h3 {
+  color: #8a817c;
+  text-transform: lowercase;
+}
+
+.footer {
+  width: 70%;
+}
+.footer footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer footer .footer-title {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer footer .footer-title .fa-brands {
+  font-size: 35px;
+}
+.footer footer .footer-title h4 {
+  font-family: "COCOGOOSE", sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+}
+.footer footer .footer-body {
+  width: 70%;
+}
+.footer footer .footer-body p {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
 }
 
 @media (max-width: 768px) {
@@ -226,6 +396,7 @@ header nav ul li a:hover {
   }
 
   .program {
+    width: 100%;
     text-align: center;
     padding: 40px 0;
     align-items: center;
@@ -248,15 +419,17 @@ header nav ul li a:hover {
   .program .program-items {
     display: flex;
     flex-direction: column;
+    justify-content: start;
     gap: 20px;
-    width: 100%;
+    width: 80%;
     margin: 40px auto;
   }
   .program .program-items .program-item {
     display: flex;
+    text-align: start;
     justify-content: center;
     align-items: center;
-    gap: 8px;
+    gap: 15px;
     padding: 10px 15px;
     background-color: #292626;
   }
@@ -285,6 +458,9 @@ header nav ul li a:hover {
 
   .home-pg {
     margin: 0 auto;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
   }
   .home-pg .r4 {
     top: 100px;
@@ -296,16 +472,20 @@ header nav ul li a:hover {
   }
   .home-pg .content-sec {
     display: flex;
+    width: 100%;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
     margin: 20px 0;
   }
   .home-pg .content-sec .descript-sec {
     width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
   .home-pg .content-sec .descript-sec .welcome {
     font-family: "COCOGOOSE", sans-serif;
-    color: #d62828;
   }
   .home-pg .content-sec .descript-sec .welcome h2 {
     font-weight: 800;
@@ -345,12 +525,193 @@ header nav ul li a:hover {
   }
   .home-pg .content-sec .image-sec {
     width: 100%;
+    justify-content: center;
+    align-items: center;
   }
 
   .showmenu {
     display: block;
     transform: translateY(0);
     transition: transform 1s;
+  }
+
+  .team-section {
+    margin: 50px 0;
+    width: 100%;
+  }
+  .team-section h2 {
+    text-align: center;
+  }
+  .team-section h2 span {
+    color: #d62828;
+  }
+  .team-section .horizon {
+    border: 2px solid #d62828;
+    width: 10%;
+  }
+  .team-section .team-members {
+    width: 80%;
+    margin: 30px auto;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .team-section .team-members .team {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .team-section .team-members .team .image-div {
+    position: relative;
+    width: 30%;
+    display: block;
+    z-index: 1;
+    justify-content: center;
+  }
+  .team-section .team-members .team .image-div .pattern {
+    width: 50px;
+    top: -10px;
+    left: -10px;
+    height: 50px;
+    display: block;
+    position: absolute;
+    z-index: -1;
+  }
+  .team-section .team-members .team .image-div img {
+    z-index: 1;
+  }
+  .team-section .team-members .team .image-div .icons {
+    top: 60px;
+    position: absolute;
+    background-color: #d62828;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+    display: none;
+  }
+  .team-section .team-members .team .image-div .icons .fa-brands {
+    text-align: center;
+    padding: 0 5px;
+    color: white;
+  }
+  .team-section .team-members .team .body-div {
+    width: 70%;
+    text-align: start;
+  }
+  .team-section .team-members .team .body-div h4 {
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+  }
+  .team-section .team-members .team .body-div h5 {
+    color: #d62828;
+    font-size: 13px;
+  }
+  .team-section .team-members .team .body-div .dash {
+    border: 1px solid rgb(179, 171, 171);
+    width: 10%;
+    margin-left: 0;
+  }
+  .team-section .team-members .team .body-div p {
+    font-size: 12px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+  }
+  .team-section .see-more {
+    width: 80%;
+    border: 1px solid #8a817c;
+    display: block;
+    margin: 10px auto;
+  }
+  .team-section .see-more .group {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+  .team-section .see-more .group h5 {
+    text-transform: uppercase;
+    font-size: 18px;
+  }
+  .team-section .see-more .group .fa-solid {
+    color: #d62828;
+    font-size: 20px;
+  }
+
+  .partners-section {
+    background-color: #1f2421;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+  }
+  .partners-section h2 {
+    margin: 20px 0;
+    color: #8a817c;
+  }
+  .partners-section .my-partner {
+    width: 80%;
+    margin: 10px auto;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+  }
+  .partners-section .my-partner .part1 h3 {
+    color: #8a817c;
+    text-transform: capitalize;
+  }
+  .partners-section .my-partner .part2 h3 {
+    color: #c5c3c6;
+    text-transform: capitalize;
+  }
+  .partners-section .my-partner .part3 h3 {
+    color: #8a817c;
+    text-transform: uppercase;
+  }
+  .partners-section .my-partner .part4 h3 {
+    color: #c5c3c6;
+    text-transform: capitalize;
+  }
+  .partners-section .my-partner .part5 h3 {
+    color: #8a817c;
+    text-transform: lowercase;
+  }
+
+  .footer {
+    width: 70%;
+  }
+  .footer footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  .footer footer .footer-title {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer footer .footer-title .fa-brands {
+    font-size: 35px;
+  }
+  .footer footer .footer-title h4 {
+    font-family: "COCOGOOSE", sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+  }
+  .footer footer .footer-body {
+    width: 70%;
+  }
+  .footer footer .footer-body p {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
   }
 }
 
