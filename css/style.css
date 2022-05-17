@@ -39,9 +39,9 @@ header nav {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
-  padding: 5px 10px;
+  padding: 1px 10px;
 }
 header nav .logo a img {
   width: 100px;
@@ -57,15 +57,56 @@ header nav ul {
   right: 20px;
 }
 header nav ul li {
-  padding: 0 10px;
+  padding: 0 20px;
 }
 header nav ul li a {
   font-size: 17px;
   color: #272a31;
   text-decoration: none;
+  font-family: "Lato", sans-serif;
+}
+header nav ul .enroll {
+  border: 3px solid #fc442f;
+  padding: 5px 7px;
+}
+header nav ul .enroll a {
+  color: #ec5242;
+}
+header nav ul .active a {
+  color: #ec5242;
 }
 header nav ul li a:hover {
   color: #d62828;
+}
+
+.footer {
+  width: 70%;
+}
+.footer footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer footer .footer-title {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer footer .footer-title .fa-brands {
+  font-size: 35px;
+}
+.footer footer .footer-title h4 {
+  font-family: "COCOGOOSE", sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+}
+.footer footer .footer-body {
+  width: 70%;
+}
+.footer footer .footer-body p {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
 }
 
 .program {
@@ -120,71 +161,9 @@ header nav ul li a:hover {
   margin-bottom: 70px;
 }
 
-.home-pg {
-  min-height: 70vh;
-  position: relative;
-}
-.home-pg .r4 {
-  right: 50%;
-  top: 200px;
-}
-.home-pg .r1 {
-  width: 80px;
-  height: 80px;
-}
-.home-pg .circle {
-  width: 80px;
-  height: 80px;
-  position: absolute;
-}
-.home-pg .content-sec {
-  width: 80%;
-  display: flex;
-  align-items: center;
-  margin: 20px 10px;
-}
-.home-pg .content-sec .descript-sec {
-  width: 50%;
-}
-.home-pg .content-sec .descript-sec .welcome {
-  font-family: "COCOGOOSE", sans-serif;
-  color: #d62828;
-}
-.home-pg .content-sec .descript-sec .welcome h2 {
-  font-weight: 800;
-  font-size: 25px;
-}
-.home-pg .content-sec .descript-sec .welcome h1 {
-  font-size: 30px;
-  text-transform: uppercase;
-  background-image: linear-gradient(to right, #ec5242, rgb(153, 15, 5));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.home-pg .content-sec .descript-sec .text-description {
-  position: relative;
-}
-.home-pg .content-sec .descript-sec .text-description h4 {
-  color: #d62828;
-  font-family: "Lato", sans-serif;
-  font-weight: 600;
-  position: relative;
-  font-size: 18px;
-}
-.home-pg .content-sec .descript-sec .text-description span {
-  position: absolute;
-  text-align: center;
-}
-.home-pg .content-sec .descript-sec .text-description p {
-  color: #272a31;
-  font-family: "Lato", sans-serif;
-  font-weight: 600;
-  line-height: 30px;
-  margin-right: 10px;
-  font-size: 16px;
-}
-.home-pg .content-sec .image-sec {
-  width: 50%;
+.horizon {
+  border: 1px solid #d62828;
+  width: 5%;
 }
 
 .team-section {
@@ -233,22 +212,6 @@ header nav ul li a:hover {
 .team-section .team-members .team .image-div img {
   z-index: 1;
 }
-.team-section .team-members .team .image-div .icons {
-  top: 60px;
-  position: absolute;
-  background-color: #d62828;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  width: 100%;
-  padding: 10px 0;
-  display: none;
-}
-.team-section .team-members .team .image-div .icons .fa-brands {
-  text-align: center;
-  padding: 0 5px;
-  color: white;
-}
 .team-section .team-members .team .body-div {
   width: 70%;
   text-align: start;
@@ -276,11 +239,6 @@ header nav ul li a:hover {
   width: 100%;
   border: 1px solid #8a817c;
   display: none;
-}
-
-.horizon {
-  border: 1px solid #d62828;
-  width: 5%;
 }
 
 .partners-section {
@@ -323,34 +281,117 @@ header nav ul li a:hover {
   text-transform: lowercase;
 }
 
-.footer {
-  width: 70%;
+.home-pg {
+  min-height: 70vh;
+  position: relative;
+  background-image: url("../img/desk.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.footer footer {
+.home-pg .r4 {
+  right: 50%;
+  top: 200px;
+}
+.home-pg .r1 {
+  width: 80px;
+  height: 80px;
+}
+.home-pg .circle {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+}
+.home-pg .content-sec {
+  width: 80%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  margin: 20px auto;
 }
-.footer footer .footer-title {
-  width: 30%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.home-pg .content-sec .descript-sec {
+  width: 60%;
 }
-.footer footer .footer-title .fa-brands {
-  font-size: 35px;
-}
-.footer footer .footer-title h4 {
+.home-pg .content-sec .descript-sec .welcome {
   font-family: "COCOGOOSE", sans-serif;
-  font-weight: 600;
-  font-size: 22px;
+  color: #d62828;
 }
-.footer footer .footer-body {
-  width: 70%;
+.home-pg .content-sec .descript-sec .welcome h2 {
+  font-weight: 800;
+  font-size: 25px;
 }
-.footer footer .footer-body p {
+.home-pg .content-sec .descript-sec .welcome h1 {
+  font-size: 30px;
+  text-transform: uppercase;
+  background-image: linear-gradient(to right, #ec5242, rgb(153, 15, 5));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.home-pg .content-sec .descript-sec .text-description {
+  position: relative;
+}
+.home-pg .content-sec .descript-sec .text-description h4 {
+  color: #d62828;
   font-family: "Lato", sans-serif;
-  font-weight: 300;
+  font-weight: 600;
+  position: relative;
+  font-size: 18px;
+}
+.home-pg .content-sec .descript-sec .text-description span {
+  position: absolute;
+  text-align: center;
+}
+.home-pg .content-sec .descript-sec .text-description p {
+  border: 2px solid white;
+  color: #272a31;
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  line-height: 20px;
+  margin-right: 10px;
+  font-size: 14px;
+}
+.home-pg .content-sec .image-sec {
+  width: 40%;
+}
+.home-pg .content-sec .image-sec .btn {
+  width: 100%;
+  margin: 0 50px;
+}
+.home-pg .content-sec .image-sec .btn a {
+  padding: 9px 50px;
+  color: #d62828;
+  margin: 10px 0;
+  border: 2px dotted #d62828;
+  text-decoration: none;
+}
+.home-pg .content-sec .image-sec .btn div {
+  transition: all 1s linear;
+}
+.home-pg .content-sec .image-sec .btn div:hover {
+  transform: scale(1.05);
+}
+.home-pg .content-sec .image-sec .btn div:hover a {
+  font-weight: 600;
+}
+.home-pg .content-sec .image-sec .btn .click-here {
+  position: relative;
+}
+.home-pg .content-sec .image-sec .btn .click-here h5 {
+  position: absolute;
+  color: #d62828;
+  font-size: 20px;
+  top: 15px;
+}
+.home-pg .content-sec .image-sec .btn .click-here h5 span {
+  color: blue;
+}
+.home-pg .content-sec .image-sec .btn .click-here .fa-arrow-circle-down {
+  position: absolute;
+  font-size: 32px;
+  color: #f32009;
+  top: -50px;
+  left: 60%;
+  transform: rotate(20deg);
 }
 
 @media (max-width: 768px) {
@@ -393,6 +434,45 @@ header nav ul li a:hover {
     font-size: 22px;
     color: #fff;
     text-decoration: none;
+  }
+  header nav ul .enroll {
+    border: 3px solid #fdf9f8;
+    padding: 5px 7px;
+    width: 20%;
+  }
+  header nav ul .enroll a {
+    color: #fdf9f9;
+  }
+
+  .footer {
+    width: 70%;
+  }
+  .footer footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  .footer footer .footer-title {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer footer .footer-title .fa-brands {
+    font-size: 35px;
+  }
+  .footer footer .footer-title h4 {
+    font-family: "COCOGOOSE", sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+  }
+  .footer footer .footer-body {
+    width: 70%;
+  }
+  .footer footer .footer-body p {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
   }
 
   .program {
@@ -456,11 +536,153 @@ header nav ul li a:hover {
     text-transform: capitalize;
   }
 
+  .showmenu {
+    display: block;
+    transform: translateY(0);
+    transition: transform 1s;
+  }
+
+  .team-section {
+    margin: 50px 0;
+    width: 100%;
+  }
+  .team-section h2 {
+    text-align: center;
+  }
+  .team-section h2 span {
+    color: #d62828;
+  }
+  .team-section .horizon {
+    border: 2px solid #d62828;
+    width: 10%;
+  }
+  .team-section .see-more {
+    width: 80%;
+    border: 1px solid #8a817c;
+    display: block;
+    margin: 10px auto;
+  }
+  .team-section .see-more .group {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+  .team-section .see-more .group h5 {
+    text-transform: uppercase;
+    font-size: 18px;
+  }
+  .team-section .see-more .group .fa-solid {
+    color: #d62828;
+    font-size: 20px;
+  }
+  .team-section .team-members {
+    width: 80%;
+    margin: 30px auto;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .team-section .team-members .team {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .team-section .team-members .team .image-div {
+    position: relative;
+    width: 30%;
+    display: block;
+    z-index: 1;
+    justify-content: center;
+  }
+  .team-section .team-members .team .image-div .pattern {
+    width: 50px;
+    top: -10px;
+    left: -10px;
+    height: 50px;
+    display: block;
+    position: absolute;
+    z-index: -1;
+  }
+  .team-section .team-members .team .image-div img {
+    z-index: 1;
+  }
+  .team-section .team-members .team .body-div {
+    width: 70%;
+    text-align: start;
+  }
+  .team-section .team-members .team .body-div h4 {
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+  }
+  .team-section .team-members .team .body-div h5 {
+    color: #d62828;
+    font-size: 13px;
+  }
+  .team-section .team-members .team .body-div .dash {
+    border: 1px solid rgb(179, 171, 171);
+    width: 10%;
+    margin-left: 0;
+  }
+  .team-section .team-members .team .body-div p {
+    font-size: 12px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+  }
+
+  .partners-section {
+    background-color: #1f2421;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+  }
+  .partners-section h2 {
+    margin: 20px 0;
+    color: #8a817c;
+  }
+  .partners-section .my-partner {
+    width: 80%;
+    margin: 10px auto;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+  }
+  .partners-section .my-partner .part1 h3 {
+    color: #8a817c;
+    text-transform: capitalize;
+  }
+  .partners-section .my-partner .part2 h3 {
+    color: #c5c3c6;
+    text-transform: capitalize;
+  }
+  .partners-section .my-partner .part3 h3 {
+    color: #8a817c;
+    text-transform: uppercase;
+  }
+  .partners-section .my-partner .part4 h3 {
+    color: #c5c3c6;
+    text-transform: capitalize;
+  }
+  .partners-section .my-partner .part5 h3 {
+    color: #8a817c;
+    text-transform: lowercase;
+  }
+
   .home-pg {
     margin: 0 auto;
     width: 100%;
     justify-content: center;
     align-items: center;
+    background-image: url("../img/mobile.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   .home-pg .r4 {
     top: 100px;
@@ -525,193 +747,47 @@ header nav ul li a:hover {
   }
   .home-pg .content-sec .image-sec {
     width: 100%;
-    justify-content: center;
-    align-items: center;
+    margin-top: 40px;
   }
-
-  .showmenu {
-    display: block;
-    transform: translateY(0);
-    transition: transform 1s;
-  }
-
-  .team-section {
-    margin: 50px 0;
+  .home-pg .content-sec .image-sec .btn {
     width: 100%;
+    margin: 0 50px;
   }
-  .team-section h2 {
-    text-align: center;
-  }
-  .team-section h2 span {
+  .home-pg .content-sec .image-sec .btn a {
+    padding: 9px 50px;
     color: #d62828;
+    margin: 10px 0;
+    border: 2px dotted #d62828;
+    text-decoration: none;
   }
-  .team-section .horizon {
-    border: 2px solid #d62828;
-    width: 10%;
+  .home-pg .content-sec .image-sec .btn div {
+    transition: all 1s linear;
   }
-  .team-section .team-members {
-    width: 80%;
-    margin: 30px auto;
-    justify-content: center;
-    align-items: center;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 30px;
+  .home-pg .content-sec .image-sec .btn div:hover {
+    transform: scale(1.05);
   }
-  .team-section .team-members .team {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+  .home-pg .content-sec .image-sec .btn div:hover a {
+    font-weight: 600;
   }
-  .team-section .team-members .team .image-div {
+  .home-pg .content-sec .image-sec .btn .click-here {
     position: relative;
-    width: 30%;
-    display: block;
-    z-index: 1;
-    justify-content: center;
   }
-  .team-section .team-members .team .image-div .pattern {
-    width: 50px;
-    top: -10px;
-    left: -10px;
-    height: 50px;
-    display: block;
+  .home-pg .content-sec .image-sec .btn .click-here h5 {
     position: absolute;
-    z-index: -1;
-  }
-  .team-section .team-members .team .image-div img {
-    z-index: 1;
-  }
-  .team-section .team-members .team .image-div .icons {
-    top: 60px;
-    position: absolute;
-    background-color: #d62828;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    width: 100%;
-    padding: 10px 0;
-    display: none;
-  }
-  .team-section .team-members .team .image-div .icons .fa-brands {
-    text-align: center;
-    padding: 0 5px;
-    color: white;
-  }
-  .team-section .team-members .team .body-div {
-    width: 70%;
-    text-align: start;
-  }
-  .team-section .team-members .team .body-div h4 {
-    font-size: 16px;
-    font-family: "Lato", sans-serif;
-    font-weight: 900;
-  }
-  .team-section .team-members .team .body-div h5 {
-    color: #d62828;
-    font-size: 13px;
-  }
-  .team-section .team-members .team .body-div .dash {
-    border: 1px solid rgb(179, 171, 171);
-    width: 10%;
-    margin-left: 0;
-  }
-  .team-section .team-members .team .body-div p {
-    font-size: 12px;
-    font-family: "Lato", sans-serif;
-    font-weight: 400;
-  }
-  .team-section .see-more {
-    width: 80%;
-    border: 1px solid #8a817c;
-    display: block;
-    margin: 10px auto;
-  }
-  .team-section .see-more .group {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    align-items: center;
-  }
-  .team-section .see-more .group h5 {
-    text-transform: uppercase;
-    font-size: 18px;
-  }
-  .team-section .see-more .group .fa-solid {
     color: #d62828;
     font-size: 20px;
+    top: 15px;
   }
-
-  .partners-section {
-    background-color: #1f2421;
-    text-align: center;
-    padding: 20px 0;
-    width: 100%;
+  .home-pg .content-sec .image-sec .btn .click-here h5 span {
+    color: blue;
   }
-  .partners-section h2 {
-    margin: 20px 0;
-    color: #8a817c;
-  }
-  .partners-section .my-partner {
-    width: 80%;
-    margin: 10px auto;
-    grid-template-columns: repeat(3, 1fr);
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    gap: 30px;
-  }
-  .partners-section .my-partner .part1 h3 {
-    color: #8a817c;
-    text-transform: capitalize;
-  }
-  .partners-section .my-partner .part2 h3 {
-    color: #c5c3c6;
-    text-transform: capitalize;
-  }
-  .partners-section .my-partner .part3 h3 {
-    color: #8a817c;
-    text-transform: uppercase;
-  }
-  .partners-section .my-partner .part4 h3 {
-    color: #c5c3c6;
-    text-transform: capitalize;
-  }
-  .partners-section .my-partner .part5 h3 {
-    color: #8a817c;
-    text-transform: lowercase;
-  }
-
-  .footer {
-    width: 70%;
-  }
-  .footer footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-  }
-  .footer footer .footer-title {
-    width: 30%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .footer footer .footer-title .fa-brands {
-    font-size: 35px;
-  }
-  .footer footer .footer-title h4 {
-    font-family: "COCOGOOSE", sans-serif;
-    font-weight: 600;
-    font-size: 22px;
-  }
-  .footer footer .footer-body {
-    width: 70%;
-  }
-  .footer footer .footer-body p {
-    font-family: "Lato", sans-serif;
-    font-weight: 300;
+  .home-pg .content-sec .image-sec .btn .click-here .fa-arrow-circle-down {
+    position: absolute;
+    font-size: 32px;
+    color: #f32009;
+    top: -40px;
+    left: 40%;
+    transform: rotate(20deg);
   }
 }
 
