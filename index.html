@@ -29,7 +29,7 @@
       <div class="humbergur"><i class="fa-solid fa-bars"></i></div>
       <ul class="ul-items">
         <li class="active"><a href="index.html">Home</a></li>
-        <li><a href="#about">About us</a></li>
+        <li><a href="about.html">About us</a></li>
         <li><a href="#activity">Activity</a></li>
         <li><a href="#team">Staff</a></li>
         <li><a href="#partner">Partner</a></li>
@@ -38,6 +38,48 @@
     </nav>
   </header>
   <div class="wrapper">
+    <div class="overlay">
+      <div class="popup">
+        <div class="title">
+          <h3>Enrollment Form</h3>
+          <p class="closeBtn">&times;</p>
+        </div>
+        <hr class="line">
+        <form action="https://formspree.io/f/mpzbknzr" method="post">
+          <div class="double">
+            <div class="mb-3">
+              <label for="fname" class="form-label">Firstname</label>
+              <input type="text"  placeholder="Enter Firstname" name = "fname" class="form-control" id="fname" >
+            </div>
+            <div class="mb-3">
+              <label for="lname" class="form-label">Lastname</label>
+              <input type="text"  placeholder="Enter Lastname" name = "lname" class="form-control" id="lname" >
+            </div>
+          </div>
+          <div class="double">
+            <div class="mb-3">
+              <label for="email" class="form-label">Email address</label>
+              <input type="email" placeholder=" Enter Email address" name = "email"  class="form-control" id="email" >
+            </div>
+            <div class="mb-3">
+              <label for="phone" class="form-label">Contact</label>
+              <input type="text"  placeholder="Enter Contact" name = "phone" class="form-control" id="phone" >
+            </div>
+          </div>
+          <div class="double">
+            <div class="mb-3">
+              <label for="pass" class="form-label">Password</label>
+              <input type="password" placeholder="Enter Password" name = "pass"  class="form-control" id="pass">
+            </div>
+            <div class="mb-3">
+              <label for="cpass" class="form-label">Confirm Password</label>
+              <input type="password" placeholder="Confirm Password" name = "cpass"  class="form-control" id="cpass">
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
     <section class="home-pg" id="about">
       <img class=" circle r1" src="img/round.png" alt="">
       <img class=" circle r4" src="img/r4.png" alt="">
@@ -54,7 +96,10 @@
               for the teaching of students under the direction of teachers,I love how open and spacious the school is. I
               can breathe and move freely without bumping into anyone.” A non-toxic school environment is one that
               doesn't hinder students' growth and doesn't make learning hard for students</p>
-
+             <div class="intake-date">
+               <h2>2022.10.06(MON) ~ 10(FRI)</h2>
+               <h4>@elite School is a National school of Pioneers</h4>
+             </div>
           </div>
         </div>
         <div class="image-sec">
@@ -63,9 +108,8 @@
               <h5>Click the button <span> above </span> to enroll now</h5>
               <i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
             </div>
-            <div><a href="#">Enroll Now</a></div>
+            <div class="enroll"><a href="#" class="enrol">Enroll Now</a></div>
           </div>
-          <!-- <img src="img/s1.jpg" alt="student"> -->
         </div>
       </div>
     </section>
@@ -115,7 +159,7 @@
       <h2>OUR <span>TEAM</span></h2>
       <hr class="horizon">
       <div class="team-members" id="demo">
-        
+
       </div>
       <div class="see-more" id="see-me">
         <div class="group">
@@ -159,7 +203,8 @@
       </footer>
     </section>
   </div>
-
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/b0c7c255c0.js" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>
