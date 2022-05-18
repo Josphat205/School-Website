@@ -1,4 +1,5 @@
 body {
+  overflow-x: hidden;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -124,6 +125,96 @@ header nav ul li a:hover {
 .footer footer .footer-body p {
   font-family: "Lato", sans-serif;
   font-weight: 300;
+}
+
+.overlay {
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  background-color: #8a817c;
+  z-index: 100;
+  backdrop-filter: blur(50px);
+  display: none;
+}
+
+.overlay .popup {
+  display: none;
+  border: #020310;
+  background-color: #201d1d;
+  width: 40%;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  padding: 20px 20px;
+  justify-content: center;
+}
+
+.overlay .popup h3 {
+  text-align: center;
+  color: white;
+}
+
+.overlay .popup .line {
+  border: 2px solid #fff;
+}
+
+.overlay .popup .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.overlay .popup .title p {
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+
+.overlay .popup form {
+  margin: 10px 20px;
+}
+
+.overlay .popup form .double {
+  display: flex;
+  gap: 40px;
+}
+
+.overlay .popup form .mb-3 {
+  width: 300px;
+}
+
+.overlay .popup form .mb-3 label {
+  color: #fdf9f9;
+}
+
+.overlay .popup form .mb-3 .form-control {
+  padding: 10px 10px;
+  margin: 10px 0;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  width: 100%;
+  text-align: start;
+}
+
+.overlay .popup form button {
+  padding: 10px 15px;
+  text-align: center;
+  background-color: rgb(59, 59, 243);
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+}
+
+.overlay .popup form button:hover {
+  background-color: #020310;
+  color: white;
 }
 
 .program {
@@ -409,6 +500,22 @@ header nav ul li a:hover {
   font-size: 14px;
 }
 
+.home-pg .content-sec .descript-sec .text-description .intake-date .horizon {
+  text-align: start;
+}
+
+.home-pg .content-sec .descript-sec .text-description .intake-date h2 {
+  font-family: "COCOGOOSE", sans-serif;
+  font-weight: 800;
+  color: gray;
+}
+
+.home-pg .content-sec .descript-sec .text-description .intake-date h4 {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  color: #020310;
+}
+
 .home-pg .content-sec .image-sec {
   width: 40%;
 }
@@ -510,10 +617,14 @@ header nav ul li a:hover {
     text-decoration: none;
   }
 
+  header nav ul .active a {
+    color: white;
+  }
+
   header nav ul .enroll {
     border: 3px solid #fdf9f8;
     padding: 5px 7px;
-    width: 20%;
+    width: 24%;
   }
 
   header nav ul .enroll a {
@@ -555,6 +666,94 @@ header nav ul li a:hover {
   .footer footer .footer-body p {
     font-family: "Lato", sans-serif;
     font-weight: 300;
+  }
+
+  .overlay {
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    background-color: #8a817c;
+    z-index: 100;
+    backdrop-filter: blur(50px);
+    display: none;
+  }
+
+  .overlay .popup {
+    display: none;
+    border: #020310;
+    border-radius: 20px;
+    background-color: #201d1d;
+    width: 70%;
+    margin: 10px auto;
+    position: fixed;
+    left: 42%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    padding: 10px 10px;
+    justify-content: center;
+  }
+
+  .overlay .popup h3 {
+    text-align: center;
+    color: white;
+  }
+
+  .overlay .popup .line {
+    border: 2px solid #fff;
+  }
+
+  .overlay .popup .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 10px;
+  }
+
+  .overlay .popup .title p {
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+  }
+
+  .overlay .popup form {
+    margin: 10px 20px;
+  }
+
+  .overlay .popup form .double {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .overlay .popup form .mb-3 label {
+    color: #fdf9f9;
+  }
+
+  .overlay .popup form .mb-3 .form-control {
+    padding: 10px 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    width: 80%;
+    text-align: start;
+  }
+
+  .overlay .popup form button {
+    padding: 10px 15px;
+    text-align: center;
+    background-color: rgb(59, 59, 243);
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+  }
+
+  .overlay .popup form button:hover {
+    background-color: #020310;
+    color: white;
   }
 
   .program {
@@ -686,6 +885,7 @@ header nav ul li a:hover {
 
   .team-section .team-members .team {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 20px;
@@ -741,6 +941,10 @@ header nav ul li a:hover {
     font-weight: 400;
   }
 
+  .team-section .team-members .toggle:nth-child(n+3) {
+    display: none;
+  }
+
   .partners-section {
     background-color: #1f2421;
     text-align: center;
@@ -760,32 +964,38 @@ header nav ul li a:hover {
     justify-content: center;
     align-items: center;
     text-align: center;
-    gap: 30px;
+    gap: 20px;
+    flex-wrap: wrap;
   }
 
   .partners-section .my-partner .part1 h3 {
     color: #8a817c;
     text-transform: capitalize;
+    font-size: 16px;
   }
 
   .partners-section .my-partner .part2 h3 {
     color: #c5c3c6;
     text-transform: capitalize;
+    font-size: 16px;
   }
 
   .partners-section .my-partner .part3 h3 {
     color: #8a817c;
     text-transform: uppercase;
+    font-size: 16px;
   }
 
   .partners-section .my-partner .part4 h3 {
     color: #c5c3c6;
     text-transform: capitalize;
+    font-size: 16px;
   }
 
   .partners-section .my-partner .part5 h3 {
     color: #8a817c;
     text-transform: lowercase;
+    font-size: 16px;
   }
 
   .home-pg {
