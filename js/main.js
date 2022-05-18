@@ -92,6 +92,7 @@ for (let i = 0; i < staff.length; i += 1) {
 </div></div>
   `;
 }
+
 $('#see-me').on('click', () => {
   $('.toggle:hidden').slice(0, 2).slideDown();
   if ($('.toggle:hidden').length === 0) {
