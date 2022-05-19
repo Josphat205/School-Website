@@ -42,7 +42,7 @@ img {
 
 header {
   background-color: #fff;
-  height: 60px;
+  height: 70px;
 
   nav {
     display: flex;
@@ -51,11 +51,16 @@ header {
     align-items: center;
     width: 80%;
     margin: 0 auto;
-    padding: 1px 10px;
+    padding: 0 10px;
+
+    .logo {
+      justify-content: center;
+      align-items: center;
+    }
 
     .logo a img {
       width: 100px;
-      height: 50px;
+      height: 40px;
     }
 
     .humbergur {
@@ -65,6 +70,7 @@ header {
 
     ul {
       display: flex;
+      justify-content: center;
       align-items: center;
       right: 20px;
 
