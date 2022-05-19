@@ -74,7 +74,7 @@ const demo = document.getElementById('demo');
 for (let i = 0; i < staff.length; i += 1) {
   demo.innerHTML += `<div class="toggle"><div class="team">
   <div class="image-div">
-    <img src="img/rec.jpg" alt="" class="pattern">
+    <img src="img/rec.jpg" alt="rectange image" class="pattern">
     <img src="${staff[i].image}" alt="teacher">
     <div class="icons">
       <i class="fa-brands fa-facebook"></i>
