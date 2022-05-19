@@ -91,6 +91,36 @@ header nav ul li a:hover {
   color: #d62828;
 }
 
+.topnav {
+  background-color: #020310;
+}
+
+.topnav .top {
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.topnav .top ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.topnav .top ul li {
+  color: white;
+  padding-right: 20px;
+}
+
+.topnav .top ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+}
+
 .footer {
   width: 70%;
 }
@@ -629,6 +659,10 @@ header nav ul li a:hover {
 
   header nav ul .enroll a {
     color: #fdf9f9;
+  }
+
+  .topnav {
+    display: none;
   }
 
   .footer {
