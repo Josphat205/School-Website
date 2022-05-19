@@ -14,7 +14,7 @@
 ![Desktop Version](img/mob3.png)
 ![Desktop Version](img/mob4.png)
 ## Usage
-
+- Click here for  [@Live Demo](https://josphat205.github.io/School-Website/).
 ---
 
 ```
@@ -51,8 +51,7 @@ Options:
 
 ## **Acknowledgements**
 
-- [@Josphat205](git@github.com:Josphat205/School-Website.git) for logo and UI design assistance.
-- Base logo vector made by [@Josphat37023781](https://www.twitter.com/) from [josphat kiploman](www.linkedin.com).
+- Template Designed by [@Cindy Shin](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015).
 
 ## **Donations**
 
