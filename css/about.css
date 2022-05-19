@@ -4,7 +4,6 @@ body {
   box-sizing: border-box;
   background: url("img/back3.jpg"), linear-gradient(#d3d3d3, #d3d3d3);
   overflow-x: hidden;
-
   /* W3C */
   font-family: "Lato", sans-serif;
 }
@@ -37,7 +36,6 @@ header {
   background-color: #fff;
   height: 60px;
 }
-
 header nav {
   display: flex;
   flex-wrap: wrap;
@@ -47,49 +45,63 @@ header nav {
   margin: 0 auto;
   padding: 1px 10px;
 }
-
 header nav .logo a img {
   width: 100px;
   height: 50px;
 }
-
 header nav .humbergur {
   font-size: 30px;
   display: none;
 }
-
 header nav ul {
   display: flex;
   align-items: center;
   right: 20px;
 }
-
 header nav ul li {
   padding: 0 20px;
 }
-
 header nav ul li a {
   font-size: 17px;
   color: #272a31;
   text-decoration: none;
   font-family: "Lato", sans-serif;
 }
-
-header nav ul .active a {
-  color: #ec5242;
-}
-
 header nav ul .enroll {
   border: 3px solid #fc442f;
   padding: 5px 9px;
 }
-
 header nav ul .enroll a {
   color: #ec5242;
 }
+header nav ul .active a {
+  color: #ec5242;
+}
 
-header nav ul .enroll li a:hover {
-  color: #d62828;
+.topnav {
+  background-color: #020310;
+}
+.topnav .top {
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+.topnav .top ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.topnav .top ul li {
+  color: white;
+  padding-right: 20px;
+}
+.topnav .top ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
 }
 
 .program {
@@ -101,16 +113,13 @@ header nav ul .enroll li a:hover {
   background-color: white;
   color: #020310;
 }
-
 .program h3 {
   padding: 0;
 }
-
 .program hr {
   border: 2px solid #d62828;
   width: 10%;
 }
-
 .program .program-body {
   width: 70%;
   margin: 10px auto;
@@ -118,12 +127,10 @@ header nav ul .enroll li a:hover {
   align-items: center;
   text-align: center;
 }
-
 .program .program-body p {
   font-size: 15px;
   line-height: 30px;
 }
-
 .program .program-body .logo-sec {
   width: 50%;
   margin: 30px auto;
@@ -131,11 +138,9 @@ header nav ul .enroll li a:hover {
   border: 2px solid #d5d5dd;
   padding: 15px 15px;
 }
-
 .program .program-body .logo-sec img {
   width: 40%;
 }
-
 .program .program-link {
   color: #fff;
   font-size: 16px;
@@ -148,34 +153,28 @@ header nav ul .enroll li a:hover {
   background-color: #303033;
   color: white;
 }
-
 .footer footer {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 .footer footer .footer-title {
   width: 30%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 .footer footer .footer-title .fa-brands {
   font-size: 35px;
 }
-
 .footer footer .footer-title h4 {
   font-family: "COCOGOOSE", sans-serif;
   font-weight: 600;
   font-size: 22px;
 }
-
 .footer footer .footer-body {
   width: 70%;
 }
-
 .footer footer .footer-body p {
   font-family: "Lato", sans-serif;
   font-weight: 300;
@@ -193,12 +192,10 @@ header nav ul .enroll li a:hover {
   width: 100%;
   display: none;
 }
-
 .partners-section1 h5 {
   margin: 20px 0;
   color: #8a817c;
 }
-
 .partners-section1 .my-partner {
   width: 80%;
   margin: 10px auto;
@@ -208,27 +205,22 @@ header nav ul .enroll li a:hover {
   align-items: center;
   gap: 20px;
 }
-
 .partners-section1 .my-partner .part1 h3 {
   color: #8a817c;
   text-transform: capitalize;
 }
-
 .partners-section1 .my-partner .part2 h3 {
   color: #c5c3c6;
   text-transform: capitalize;
 }
-
 .partners-section1 .my-partner .part3 h3 {
   color: #8a817c;
   text-transform: uppercase;
 }
-
 .partners-section1 .my-partner .part4 h3 {
   color: #c5c3c6;
   text-transform: capitalize;
 }
-
 .partners-section1 .my-partner .part5 h3 {
   color: #8a817c;
   text-transform: lowercase;
@@ -242,30 +234,25 @@ header nav ul .enroll li a:hover {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 .home-pg .r4 {
   right: 50%;
   top: 200px;
 }
-
 .home-pg .r1 {
   width: 80px;
   height: 80px;
 }
-
 .home-pg .circle {
   width: 80px;
   height: 80px;
   position: absolute;
 }
-
 .home-pg .content-sec {
   width: 80%;
   justify-content: center;
   align-items: center;
   margin: 20px auto;
 }
-
 .home-pg .content-sec .descript-sec {
   margin-top: 50px;
   width: 100%;
@@ -273,17 +260,14 @@ header nav ul .enroll li a:hover {
   align-items: center;
   text-align: center;
 }
-
 .home-pg .content-sec .descript-sec .welcome {
   font-family: "COCOGOOSE", sans-serif;
   color: #d62828;
 }
-
 .home-pg .content-sec .descript-sec .welcome h2 {
   font-weight: 800;
   font-size: 25px;
 }
-
 .home-pg .content-sec .descript-sec .welcome h1 {
   font-size: 30px;
   text-transform: uppercase;
@@ -291,11 +275,9 @@ header nav ul .enroll li a:hover {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
 .home-pg .content-sec .descript-sec .text-description {
   position: relative;
 }
-
 .home-pg .content-sec .descript-sec .text-description h4 {
   color: #d62828;
   font-family: "Lato", sans-serif;
@@ -303,12 +285,10 @@ header nav ul .enroll li a:hover {
   position: relative;
   font-size: 18px;
 }
-
 .home-pg .content-sec .descript-sec .text-description span {
   position: absolute;
   text-align: center;
 }
-
 .home-pg .content-sec .descript-sec .text-description p {
   width: 80%;
   margin: 40px auto;
@@ -321,19 +301,15 @@ header nav ul .enroll li a:hover {
   line-height: 30px;
   font-size: 17px;
 }
-
 .home-pg .content-sec .descript-sec .intake {
   margin: 80px 0;
 }
-
 .home-pg .content-sec .descript-sec .intake h4 {
   font-size: 20px;
 }
-
 .home-pg .content-sec .descript-sec .intake p {
   font-size: 15px;
 }
-
 .home-pg .content-sec .descript-sec .intake a {
   color: #020310;
   font-weight: bold;
@@ -345,20 +321,17 @@ header nav ul .enroll li a:hover {
   width: 100%;
   background-color: white;
 }
-
 .partners-section h5 {
   margin: 20px 0;
   color: black;
   font-weight: bold;
   font-size: 22px;
 }
-
 .partners-section .my-partner {
   width: 80%;
   margin: 10px auto;
   text-align: center;
 }
-
 .partners-section .my-partner .activity {
   width: 60%;
   margin: 20px auto;
@@ -366,7 +339,6 @@ header nav ul .enroll li a:hover {
   grid-template-columns: 1fr 1fr;
   gap: 20px;
 }
-
 .partners-section .my-partner .activity .my-activity {
   position: relative;
   background: linear-gradient(rgba(248, 3, 3, 0.6) 100%, rgba(245, 5, 5, 0.6) 100%), url("../img/sport1.jpg");
@@ -375,7 +347,6 @@ header nav ul .enroll li a:hover {
   background-size: cover;
   background-blend-mode: multiply;
 }
-
 .partners-section .my-partner .activity .my-activity .text h3 {
   font-family: "COCOGOOSE", sans-serif;
   font-weight: 900;
@@ -383,11 +354,9 @@ header nav ul .enroll li a:hover {
   text-align: center;
   font-size: 22px;
 }
-
 .partners-section .my-partner .activity .my-activity .text p {
   color: white;
 }
-
 .partners-section .my-partner .activity .my-activity1 {
   position: relative;
   background: linear-gradient(rgba(248, 3, 3, 0.6) 100%, rgba(245, 5, 5, 0.6) 100%), url("../img/sport2.jpg");
@@ -395,7 +364,6 @@ header nav ul .enroll li a:hover {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 .partners-section .my-partner .activity .my-activity1 .text h3 {
   font-family: "COCOGOOSE", sans-serif;
   font-weight: 900;
@@ -403,7 +371,6 @@ header nav ul .enroll li a:hover {
   text-align: center;
   font-size: 22px;
 }
-
 .partners-section .my-partner .activity .my-activity1 .text p {
   color: white;
 }
@@ -412,23 +379,19 @@ header nav ul .enroll li a:hover {
   header nav {
     position: relative;
   }
-
   header nav .humbergur {
     position: absolute;
     top: 15px;
     left: 20px;
     display: block;
   }
-
   header nav .logo {
     display: none;
   }
-
   header nav .logo a img {
     width: 80px;
     height: 40px;
   }
-
   header nav ul {
     background-color: #d62828;
     flex-direction: column;
@@ -443,11 +406,9 @@ header nav ul .enroll li a:hover {
     transition: transform 1s linear;
     transform: translateY(-120%);
   }
-
   header nav ul li {
     padding: 15px 0;
   }
-
   header nav ul li a {
     font-family: "Roboto Flex", sans-serif;
     font-weight: 500;
@@ -455,19 +416,20 @@ header nav ul .enroll li a:hover {
     color: #fff;
     text-decoration: none;
   }
-
   header nav ul .active a {
     color: white;
   }
-
   header nav ul .enroll {
     border: 3px solid #fdf9f8;
     padding: 5px 7px;
     width: 20%;
   }
-
   header nav ul .enroll a {
     color: #fdf9f9;
+  }
+
+  .topnav {
+    display: none;
   }
 
   .program {
@@ -480,16 +442,13 @@ header nav ul .enroll li a:hover {
     background-color: white;
     color: #020310;
   }
-
   .program h3 {
     padding: 0;
   }
-
   .program hr {
     border: 2px solid #d62828;
     width: 10%;
   }
-
   .program .program-body {
     width: 70%;
     margin: 10px auto;
@@ -497,12 +456,10 @@ header nav ul .enroll li a:hover {
     align-items: center;
     text-align: center;
   }
-
   .program .program-body p {
     font-size: 15px;
     line-height: 30px;
   }
-
   .program .program-body .logo-sec {
     width: 100%;
     margin: 30px auto;
@@ -510,11 +467,9 @@ header nav ul .enroll li a:hover {
     border: 2px solid #d5d5dd;
     padding: 15px 0;
   }
-
   .program .program-body .logo-sec img {
     width: 40%;
   }
-
   .program .program-link {
     color: #fff;
     font-size: 16px;
@@ -529,12 +484,10 @@ header nav ul .enroll li a:hover {
     width: 100%;
     display: block;
   }
-
   .partners-section1 h5 {
     margin: 20px 0;
     color: #8a817c;
   }
-
   .partners-section1 .my-partner {
     width: 80%;
     margin: 10px auto;
@@ -545,31 +498,26 @@ header nav ul .enroll li a:hover {
     gap: 20px;
     flex-wrap: wrap;
   }
-
   .partners-section1 .my-partner .part1 h3 {
     color: #8a817c;
     text-transform: capitalize;
     font-size: 16px;
   }
-
   .partners-section1 .my-partner .part2 h3 {
     color: #c5c3c6;
     text-transform: capitalize;
     font-size: 16px;
   }
-
   .partners-section1 .my-partner .part3 h3 {
     color: #8a817c;
     text-transform: uppercase;
     font-size: 16px;
   }
-
   .partners-section1 .my-partner .part4 h3 {
     color: #c5c3c6;
     text-transform: capitalize;
     font-size: 16px;
   }
-
   .partners-section1 .my-partner .part5 h3 {
     color: #8a817c;
     text-transform: lowercase;
@@ -581,7 +529,6 @@ header nav ul .enroll li a:hover {
     background-color: #303033;
     color: white;
   }
-
   .footer footer {
     width: 80%;
     margin: 10px auto;
@@ -590,28 +537,23 @@ header nav ul .enroll li a:hover {
     align-items: center;
     gap: 20px;
   }
-
   .footer footer .footer-title {
     width: 30%;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-
   .footer footer .footer-title .fa-brands {
     font-size: 35px;
   }
-
   .footer footer .footer-title h4 {
     font-family: "COCOGOOSE", sans-serif;
     font-weight: 600;
     font-size: 20px;
   }
-
   .footer footer .footer-body {
     width: 70%;
   }
-
   .footer footer .footer-body p {
     font-family: "Lato", sans-serif;
     font-weight: 300;
@@ -627,17 +569,14 @@ header nav ul .enroll li a:hover {
     background-repeat: no-repeat;
     background-size: cover;
   }
-
   .home-pg .r4 {
     top: 100px;
     right: 5%;
   }
-
   .home-pg .r1 {
     width: 200px;
     height: 200px;
   }
-
   .home-pg .content-sec {
     display: flex;
     width: 100%;
@@ -646,23 +585,19 @@ header nav ul .enroll li a:hover {
     align-items: center;
     margin: 20px 0;
   }
-
   .home-pg .content-sec .descript-sec {
     width: 100%;
     justify-content: center;
     align-items: center;
     text-align: center;
   }
-
   .home-pg .content-sec .descript-sec .welcome {
     font-family: "COCOGOOSE", sans-serif;
   }
-
   .home-pg .content-sec .descript-sec .welcome h2 {
     font-weight: 800;
     font-size: 22px;
   }
-
   .home-pg .content-sec .descript-sec .welcome h1 {
     font-size: 25px;
     text-transform: uppercase;
@@ -670,11 +605,9 @@ header nav ul .enroll li a:hover {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-
   .home-pg .content-sec .descript-sec .text-description {
     position: relative;
   }
-
   .home-pg .content-sec .descript-sec .text-description h4 {
     color: #d62828;
     font-family: "Lato", sans-serif;
@@ -682,25 +615,21 @@ header nav ul .enroll li a:hover {
     position: relative;
     font-size: 17px;
   }
-
   .home-pg .content-sec .descript-sec .text-description span {
     position: absolute;
     text-align: center;
   }
-
   .home-pg .content-sec .descript-sec .text-description .hr {
     top: 50px;
     border: 1px solid #d62828;
     width: 1000%;
   }
-
   .home-pg .content-sec .descript-sec .text-description p {
     color: #272a31;
     font-family: "Lato", sans-serif;
     font-weight: 600;
     line-height: 20px;
   }
-
   .home-pg .content-sec .image-sec {
     width: 100%;
     margin-top: 40px;
@@ -712,20 +641,17 @@ header nav ul .enroll li a:hover {
     width: 100%;
     background-color: white;
   }
-
   .partners-section h5 {
     margin: 20px 0;
     color: black;
     font-weight: bold;
     font-size: 20px;
   }
-
   .partners-section .my-partner {
     width: 80%;
     margin: 10px auto;
     text-align: center;
   }
-
   .partners-section .my-partner .activity {
     width: 100%;
     margin: 20px auto;
@@ -733,7 +659,6 @@ header nav ul .enroll li a:hover {
     grid-template-columns: 1fr;
     gap: 20px;
   }
-
   .partners-section .my-partner .activity .my-activity {
     position: relative;
     background: linear-gradient(rgba(248, 3, 3, 0.6) 100%, rgba(245, 5, 5, 0.6) 100%), url("../img/sport1.jpg");
@@ -741,18 +666,15 @@ header nav ul .enroll li a:hover {
     background-repeat: no-repeat;
     background-size: cover;
   }
-
   .partners-section .my-partner .activity .my-activity .text h3 {
     font-family: "COCOGOOSE", sans-serif;
     font-weight: 900;
     color: white;
     text-align: center;
   }
-
   .partners-section .my-partner .activity .my-activity .text p {
     color: white;
   }
-
   .partners-section .my-partner .activity .my-activity1 {
     position: relative;
     background: linear-gradient(rgba(248, 3, 3, 0.6) 100%, rgba(245, 5, 5, 0.6) 100%), url("../img/sport2.jpg");
@@ -760,14 +682,12 @@ header nav ul .enroll li a:hover {
     background-repeat: no-repeat;
     background-size: cover;
   }
-
   .partners-section .my-partner .activity .my-activity1 .text h3 {
     font-family: "COCOGOOSE", sans-serif;
     font-weight: 900;
     color: white;
     text-align: center;
   }
-
   .partners-section .my-partner .activity .my-activity1 .text p {
     color: white;
   }
@@ -778,3 +698,5 @@ header nav ul .enroll li a:hover {
     transition: transform 1s;
   }
 }
+
+/*# sourceMappingURL=about.css.map */
