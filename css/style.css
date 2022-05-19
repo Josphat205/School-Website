@@ -4,6 +4,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   background: url("img/back3.jpg"), linear-gradient(#d3d3d3, #d3d3d3);
+
   /* W3C */
   font-family: "Lato", sans-serif;
 }
@@ -35,6 +36,7 @@ header {
   background-color: #fff;
   height: 70px;
 }
+
 header nav {
   display: flex;
   flex-wrap: wrap;
@@ -44,43 +46,53 @@ header nav {
   margin: 0 auto;
   padding: 0 10px;
 }
+
 header nav .logo {
   justify-content: center;
   align-items: center;
 }
+
 header nav .logo a img {
   width: 100px;
   height: 40px;
 }
+
 header nav .humbergur {
   font-size: 30px;
   display: none;
 }
+
 header nav ul {
   display: flex;
   justify-content: center;
   align-items: center;
   right: 20px;
 }
+
 header nav ul li {
   padding: 0 20px;
 }
+
 header nav ul li a {
   font-size: 17px;
   color: #272a31;
   text-decoration: none;
   font-family: "Lato", sans-serif;
 }
+
 header nav ul .enroll {
   border: 3px solid #fc442f;
   padding: 5px 7px;
 }
+
 header nav ul .enroll a {
   color: #ec5242;
 }
+
 header nav ul .active a {
   color: #ec5242;
 }
+
 header nav ul li a:hover {
   color: #d62828;
 }
@@ -88,6 +100,7 @@ header nav ul li a:hover {
 .topnav {
   background-color: #020310;
 }
+
 .topnav .top {
   height: 40px;
   display: flex;
@@ -96,15 +109,18 @@ header nav ul li a:hover {
   width: 80%;
   margin: 0 auto;
 }
+
 .topnav .top ul {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .topnav .top ul li {
   color: white;
   padding-right: 20px;
 }
+
 .topnav .top ul li a {
   color: white;
   text-decoration: none;
@@ -114,28 +130,34 @@ header nav ul li a:hover {
 .footer {
   width: 70%;
 }
+
 .footer footer {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .footer footer .footer-title {
   width: 30%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .footer footer .footer-title .fa-brands {
   font-size: 35px;
 }
+
 .footer footer .footer-title h4 {
   font-family: "COCOGOOSE", sans-serif;
   font-weight: 600;
   font-size: 22px;
 }
+
 .footer footer .footer-body {
   width: 70%;
 }
+
 .footer footer .footer-body p {
   font-family: "Lato", sans-serif;
   font-weight: 300;
@@ -152,6 +174,7 @@ header nav ul li a:hover {
   backdrop-filter: blur(50px);
   display: none;
 }
+
 .overlay .popup {
   display: none;
   border: #020310;
@@ -165,37 +188,46 @@ header nav ul li a:hover {
   padding: 20px 20px;
   justify-content: center;
 }
+
 .overlay .popup h3 {
   text-align: center;
   color: white;
 }
+
 .overlay .popup .line {
   border: 2px solid #fff;
 }
+
 .overlay .popup .title {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-right: 10px;
 }
+
 .overlay .popup .title p {
   font-size: 30px;
   color: white;
   cursor: pointer;
 }
+
 .overlay .popup form {
   margin: 10px 20px;
 }
+
 .overlay .popup form .double {
   display: flex;
   gap: 40px;
 }
+
 .overlay .popup form .mb-3 {
   width: 300px;
 }
+
 .overlay .popup form .mb-3 label {
   color: #fdf9f9;
 }
+
 .overlay .popup form .mb-3 .form-control {
   padding: 10px 10px;
   margin: 10px 0;
@@ -205,6 +237,7 @@ header nav ul li a:hover {
   width: 100%;
   text-align: start;
 }
+
 .overlay .popup form button {
   padding: 10px 15px;
   text-align: center;
@@ -214,6 +247,7 @@ header nav ul li a:hover {
   border: none;
   border-radius: 10px;
 }
+
 .overlay .popup form button:hover {
   background-color: #020310;
   color: white;
@@ -233,13 +267,16 @@ header nav ul li a:hover {
   background-size: 10px 10px;
   background-repeat: repeat;
 }
+
 .program h2 {
   padding: 0;
 }
+
 .program hr {
   border: 2px solid #d62828;
   width: 10%;
 }
+
 .program .program-items {
   display: grid;
   width: 80%;
@@ -247,23 +284,28 @@ header nav ul li a:hover {
   gap: 20px;
   grid-template-columns: repeat(5, 1fr);
 }
+
 .program .program-items .program-item {
   padding: 10px 10px;
   background-color: #292626;
 }
+
 .program .program-items .program-item i {
   color: white;
   font-size: 30px;
 }
+
 .program .program-items .program-item h3 {
   color: #ec5242;
   font-family: "Lato", sans-serif;
   font-weight: 900;
   font-size: 16px;
 }
+
 .program .program-items .program-item p {
   font-size: 12px;
 }
+
 .program .program-link {
   color: #fff;
   font-size: 16px;
@@ -280,16 +322,20 @@ header nav ul li a:hover {
   margin: 50px 0;
   width: 100%;
 }
+
 .team-section h2 {
   text-align: center;
 }
+
 .team-section h2 span {
   color: #d62828;
 }
+
 .team-section .horizon {
   border: 2px solid #d62828;
   width: 5%;
 }
+
 .team-section .team-members {
   width: 80%;
   margin: 30px auto;
@@ -297,12 +343,14 @@ header nav ul li a:hover {
   grid-template-columns: 1fr 1fr;
   gap: 30px;
 }
+
 .team-section .team-members .team {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px;
 }
+
 .team-section .team-members .team .image-div {
   position: relative;
   width: 30%;
@@ -310,6 +358,7 @@ header nav ul li a:hover {
   z-index: 1;
   justify-content: center;
 }
+
 .team-section .team-members .team .image-div .pattern {
   width: 50px;
   top: -10px;
@@ -319,32 +368,39 @@ header nav ul li a:hover {
   position: absolute;
   z-index: -1;
 }
+
 .team-section .team-members .team .image-div img {
   z-index: 1;
 }
+
 .team-section .team-members .team .body-div {
   width: 70%;
   text-align: start;
 }
+
 .team-section .team-members .team .body-div h4 {
   font-size: 16px;
   font-family: "Lato", sans-serif;
   font-weight: 900;
 }
+
 .team-section .team-members .team .body-div h5 {
   color: #d62828;
   font-size: 13px;
 }
+
 .team-section .team-members .team .body-div .dash {
   border: 1px solid rgb(179, 171, 171);
   width: 10%;
   margin-left: 0;
 }
+
 .team-section .team-members .team .body-div p {
   font-size: 12px;
   font-family: "Lato", sans-serif;
   font-weight: 400;
 }
+
 .team-section .see-more {
   width: 100%;
   border: 1px solid #8a817c;
@@ -357,10 +413,12 @@ header nav ul li a:hover {
   padding: 20px 0;
   width: 100%;
 }
+
 .partners-section h2 {
   margin: 20px 0;
   color: #8a817c;
 }
+
 .partners-section .my-partner {
   width: 80%;
   margin: 10px auto;
@@ -370,22 +428,27 @@ header nav ul li a:hover {
   align-items: center;
   gap: 20px;
 }
+
 .partners-section .my-partner .part1 h3 {
   color: #8a817c;
   text-transform: capitalize;
 }
+
 .partners-section .my-partner .part2 h3 {
   color: #c5c3c6;
   text-transform: capitalize;
 }
+
 .partners-section .my-partner .part3 h3 {
   color: #8a817c;
   text-transform: uppercase;
 }
+
 .partners-section .my-partner .part4 h3 {
   color: #c5c3c6;
   text-transform: capitalize;
 }
+
 .partners-section .my-partner .part5 h3 {
   color: #8a817c;
   text-transform: lowercase;
@@ -399,19 +462,23 @@ header nav ul li a:hover {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .home-pg .r4 {
   right: 50%;
   top: 200px;
 }
+
 .home-pg .r1 {
   width: 80px;
   height: 80px;
 }
+
 .home-pg .circle {
   width: 80px;
   height: 80px;
   position: absolute;
 }
+
 .home-pg .content-sec {
   width: 80%;
   display: flex;
@@ -419,17 +486,21 @@ header nav ul li a:hover {
   align-items: center;
   margin: 20px auto;
 }
+
 .home-pg .content-sec .descript-sec {
   width: 60%;
 }
+
 .home-pg .content-sec .descript-sec .welcome {
   font-family: "COCOGOOSE", sans-serif;
   color: #d62828;
 }
+
 .home-pg .content-sec .descript-sec .welcome h2 {
   font-weight: 800;
   font-size: 25px;
 }
+
 .home-pg .content-sec .descript-sec .welcome h1 {
   font-size: 30px;
   text-transform: uppercase;
@@ -437,9 +508,11 @@ header nav ul li a:hover {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 .home-pg .content-sec .descript-sec .text-description {
   position: relative;
 }
+
 .home-pg .content-sec .descript-sec .text-description h4 {
   color: #d62828;
   font-family: "Lato", sans-serif;
@@ -447,10 +520,12 @@ header nav ul li a:hover {
   position: relative;
   font-size: 18px;
 }
+
 .home-pg .content-sec .descript-sec .text-description span {
   position: absolute;
   text-align: center;
 }
+
 .home-pg .content-sec .descript-sec .text-description p {
   border: 2px solid white;
   color: #272a31;
@@ -460,26 +535,32 @@ header nav ul li a:hover {
   margin-right: 10px;
   font-size: 14px;
 }
+
 .home-pg .content-sec .descript-sec .text-description .intake-date .horizon {
   text-align: start;
 }
+
 .home-pg .content-sec .descript-sec .text-description .intake-date h2 {
   font-family: "COCOGOOSE", sans-serif;
   font-weight: 800;
   color: gray;
 }
+
 .home-pg .content-sec .descript-sec .text-description .intake-date h4 {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   color: #020310;
 }
+
 .home-pg .content-sec .image-sec {
   width: 40%;
 }
+
 .home-pg .content-sec .image-sec .btn {
   width: 100%;
   margin: 0 50px;
 }
+
 .home-pg .content-sec .image-sec .btn a {
   padding: 9px 50px;
   color: #d62828;
@@ -487,27 +568,34 @@ header nav ul li a:hover {
   border: 2px dotted #d62828;
   text-decoration: none;
 }
+
 .home-pg .content-sec .image-sec .btn div {
   transition: all 1s linear;
 }
+
 .home-pg .content-sec .image-sec .btn div:hover {
   transform: scale(1.05);
 }
+
 .home-pg .content-sec .image-sec .btn div:hover a {
   font-weight: 600;
 }
+
 .home-pg .content-sec .image-sec .btn .click-here {
   position: relative;
 }
+
 .home-pg .content-sec .image-sec .btn .click-here h5 {
   position: absolute;
   color: #d62828;
   font-size: 20px;
   top: 15px;
 }
+
 .home-pg .content-sec .image-sec .btn .click-here h5 span {
   color: blue;
 }
+
 .home-pg .content-sec .image-sec .btn .click-here .fa-arrow-circle-down {
   position: absolute;
   font-size: 32px;
@@ -521,19 +609,23 @@ header nav ul li a:hover {
   header nav {
     position: relative;
   }
+
   header nav .humbergur {
     position: absolute;
     top: 15px;
     left: 20px;
     display: block;
   }
+
   header nav .logo {
     display: none;
   }
+
   header nav .logo a img {
     width: 80px;
     height: 40px;
   }
+
   header nav ul {
     background-color: #d62828;
     flex-direction: column;
@@ -548,9 +640,11 @@ header nav ul li a:hover {
     transition: transform 1s linear;
     transform: translateY(-120%);
   }
+
   header nav ul li {
     padding: 15px 0;
   }
+
   header nav ul li a {
     font-family: "Roboto Flex", sans-serif;
     font-weight: 500;
@@ -558,14 +652,17 @@ header nav ul li a:hover {
     color: #fff;
     text-decoration: none;
   }
+
   header nav ul .active a {
     color: white;
   }
+
   header nav ul .enroll {
     border: 3px solid #fdf9f8;
     padding: 5px 7px;
     width: 24%;
   }
+
   header nav ul .enroll a {
     color: #fdf9f9;
   }
@@ -577,29 +674,35 @@ header nav ul li a:hover {
   .footer {
     width: 70%;
   }
+
   .footer footer {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 30px;
   }
+
   .footer footer .footer-title {
     width: 30%;
     display: flex;
     justify-content: center;
     align-items: center;
   }
+
   .footer footer .footer-title .fa-brands {
     font-size: 35px;
   }
+
   .footer footer .footer-title h4 {
     font-family: "COCOGOOSE", sans-serif;
     font-weight: 600;
     font-size: 22px;
   }
+
   .footer footer .footer-body {
     width: 70%;
   }
+
   .footer footer .footer-body p {
     font-family: "Lato", sans-serif;
     font-weight: 300;
@@ -616,6 +719,7 @@ header nav ul li a:hover {
     backdrop-filter: blur(50px);
     display: none;
   }
+
   .overlay .popup {
     display: none;
     border: #020310;
@@ -631,34 +735,42 @@ header nav ul li a:hover {
     padding: 10px 10px;
     justify-content: center;
   }
+
   .overlay .popup h3 {
     text-align: center;
     color: white;
   }
+
   .overlay .popup .line {
     border: 2px solid #fff;
   }
+
   .overlay .popup .title {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-right: 10px;
   }
+
   .overlay .popup .title p {
     font-size: 30px;
     color: white;
     cursor: pointer;
   }
+
   .overlay .popup form {
     margin: 10px 20px;
   }
+
   .overlay .popup form .double {
     flex-direction: column;
     gap: 40px;
   }
+
   .overlay .popup form .mb-3 label {
     color: #fdf9f9;
   }
+
   .overlay .popup form .mb-3 .form-control {
     padding: 10px 10px;
     margin: 10px 0;
@@ -668,6 +780,7 @@ header nav ul li a:hover {
     width: 80%;
     text-align: start;
   }
+
   .overlay .popup form button {
     padding: 10px 15px;
     text-align: center;
@@ -677,6 +790,7 @@ header nav ul li a:hover {
     border: none;
     border-radius: 10px;
   }
+
   .overlay .popup form button:hover {
     background-color: #020310;
     color: white;
@@ -696,13 +810,16 @@ header nav ul li a:hover {
     background-size: 10px 10px;
     background-repeat: repeat;
   }
+
   .program h2 {
     padding: 0;
   }
+
   .program hr {
     border: 2px solid #d62828;
     width: 20%;
   }
+
   .program .program-items {
     display: flex;
     flex-direction: column;
@@ -711,6 +828,7 @@ header nav ul li a:hover {
     width: 80%;
     margin: 40px auto;
   }
+
   .program .program-items .program-item {
     display: flex;
     text-align: start;
@@ -720,19 +838,23 @@ header nav ul li a:hover {
     padding: 10px 15px;
     background-color: #292626;
   }
+
   .program .program-items .program-item i {
     color: white;
     font-size: 30px;
   }
+
   .program .program-items .program-item h3 {
     color: #ec5242;
     font-family: "Lato", sans-serif;
     font-weight: 900;
     font-size: 16px;
   }
+
   .program .program-items .program-item p {
     font-size: 12px;
   }
+
   .program .program-link {
     background-color: #d62828;
     padding: 20px 25px;
@@ -753,36 +875,44 @@ header nav ul li a:hover {
     margin: 50px 0;
     width: 100%;
   }
+
   .team-section h2 {
     text-align: center;
   }
+
   .team-section h2 span {
     color: #d62828;
   }
+
   .team-section .horizon {
     border: 2px solid #d62828;
     width: 10%;
   }
+
   .team-section .see-more {
     width: 80%;
     border: 1px solid #8a817c;
     display: block;
     margin: 10px auto;
   }
+
   .team-section .see-more .group {
     display: flex;
     gap: 10px;
     justify-content: center;
     align-items: center;
   }
+
   .team-section .see-more .group h5 {
     text-transform: uppercase;
     font-size: 18px;
   }
+
   .team-section .see-more .group .fa-solid {
     color: #d62828;
     font-size: 20px;
   }
+
   .team-section .team-members {
     width: 80%;
     margin: 30px auto;
@@ -792,6 +922,7 @@ header nav ul li a:hover {
     grid-template-columns: 1fr;
     gap: 30px;
   }
+
   .team-section .team-members .team {
     display: flex;
     flex-direction: row;
@@ -799,6 +930,7 @@ header nav ul li a:hover {
     align-items: center;
     gap: 20px;
   }
+
   .team-section .team-members .team .image-div {
     position: relative;
     width: 30%;
@@ -806,6 +938,7 @@ header nav ul li a:hover {
     z-index: 1;
     justify-content: center;
   }
+
   .team-section .team-members .team .image-div .pattern {
     width: 50px;
     top: -10px;
@@ -815,32 +948,39 @@ header nav ul li a:hover {
     position: absolute;
     z-index: -1;
   }
+
   .team-section .team-members .team .image-div img {
     z-index: 1;
   }
+
   .team-section .team-members .team .body-div {
     width: 70%;
     text-align: start;
   }
+
   .team-section .team-members .team .body-div h4 {
     font-size: 16px;
     font-family: "Lato", sans-serif;
     font-weight: 900;
   }
+
   .team-section .team-members .team .body-div h5 {
     color: #d62828;
     font-size: 13px;
   }
+
   .team-section .team-members .team .body-div .dash {
     border: 1px solid rgb(179, 171, 171);
     width: 10%;
     margin-left: 0;
   }
+
   .team-section .team-members .team .body-div p {
     font-size: 12px;
     font-family: "Lato", sans-serif;
     font-weight: 400;
   }
+
   .team-section .team-members .toggle:nth-child(n+3) {
     display: none;
   }
@@ -851,10 +991,12 @@ header nav ul li a:hover {
     padding: 20px 0;
     width: 100%;
   }
+
   .partners-section h2 {
     margin: 20px 0;
     color: #8a817c;
   }
+
   .partners-section .my-partner {
     width: 80%;
     margin: 10px auto;
@@ -865,26 +1007,31 @@ header nav ul li a:hover {
     gap: 20px;
     flex-wrap: wrap;
   }
+
   .partners-section .my-partner .part1 h3 {
     color: #8a817c;
     text-transform: capitalize;
     font-size: 16px;
   }
+
   .partners-section .my-partner .part2 h3 {
     color: #c5c3c6;
     text-transform: capitalize;
     font-size: 16px;
   }
+
   .partners-section .my-partner .part3 h3 {
     color: #8a817c;
     text-transform: uppercase;
     font-size: 16px;
   }
+
   .partners-section .my-partner .part4 h3 {
     color: #c5c3c6;
     text-transform: capitalize;
     font-size: 16px;
   }
+
   .partners-section .my-partner .part5 h3 {
     color: #8a817c;
     text-transform: lowercase;
@@ -901,14 +1048,17 @@ header nav ul li a:hover {
     background-repeat: no-repeat;
     background-size: cover;
   }
+
   .home-pg .r4 {
     top: 100px;
     right: 5%;
   }
+
   .home-pg .r1 {
     width: 200px;
     height: 200px;
   }
+
   .home-pg .content-sec {
     display: flex;
     width: 100%;
@@ -917,19 +1067,23 @@ header nav ul li a:hover {
     align-items: center;
     margin: 20px 0;
   }
+
   .home-pg .content-sec .descript-sec {
     width: 100%;
     justify-content: center;
     align-items: center;
     text-align: center;
   }
+
   .home-pg .content-sec .descript-sec .welcome {
     font-family: "COCOGOOSE", sans-serif;
   }
+
   .home-pg .content-sec .descript-sec .welcome h2 {
     font-weight: 800;
     font-size: 22px;
   }
+
   .home-pg .content-sec .descript-sec .welcome h1 {
     font-size: 25px;
     text-transform: uppercase;
@@ -937,9 +1091,11 @@ header nav ul li a:hover {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+
   .home-pg .content-sec .descript-sec .text-description {
     position: relative;
   }
+
   .home-pg .content-sec .descript-sec .text-description h4 {
     color: #d62828;
     font-family: "Lato", sans-serif;
@@ -947,29 +1103,35 @@ header nav ul li a:hover {
     position: relative;
     font-size: 17px;
   }
+
   .home-pg .content-sec .descript-sec .text-description span {
     position: absolute;
     text-align: center;
   }
+
   .home-pg .content-sec .descript-sec .text-description .hr {
     top: 50px;
     border: 1px solid #d62828;
     width: 1000%;
   }
+
   .home-pg .content-sec .descript-sec .text-description p {
     color: #272a31;
     font-family: "Lato", sans-serif;
     font-weight: 600;
     line-height: 20px;
   }
+
   .home-pg .content-sec .image-sec {
     width: 100%;
     margin-top: 40px;
   }
+
   .home-pg .content-sec .image-sec .btn {
     width: 100%;
     margin: 0 50px;
   }
+
   .home-pg .content-sec .image-sec .btn a {
     padding: 9px 50px;
     color: #d62828;
@@ -977,27 +1139,34 @@ header nav ul li a:hover {
     border: 2px dotted #d62828;
     text-decoration: none;
   }
+
   .home-pg .content-sec .image-sec .btn div {
     transition: all 1s linear;
   }
+
   .home-pg .content-sec .image-sec .btn div:hover {
     transform: scale(1.05);
   }
+
   .home-pg .content-sec .image-sec .btn div:hover a {
     font-weight: 600;
   }
+
   .home-pg .content-sec .image-sec .btn .click-here {
     position: relative;
   }
+
   .home-pg .content-sec .image-sec .btn .click-here h5 {
     position: absolute;
     color: #d62828;
     font-size: 20px;
     top: 15px;
   }
+
   .home-pg .content-sec .image-sec .btn .click-here h5 span {
     color: blue;
   }
+
   .home-pg .content-sec .image-sec .btn .click-here .fa-arrow-circle-down {
     position: absolute;
     font-size: 32px;
@@ -1007,5 +1176,3 @@ header nav ul li a:hover {
     transform: rotate(20deg);
   }
 }
-
-/*# sourceMappingURL=style.css.map */
