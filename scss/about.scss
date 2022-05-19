@@ -6,7 +6,8 @@ $bg-color:#d3d3d3;
 $txt-color:#272a31;
 $title-color:#d62828;
 
-html,body {
+html,
+body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -464,7 +465,8 @@ header {
 }
 
 @media (max-width: 768px) {
-  html,body {
+  html,
+  body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
