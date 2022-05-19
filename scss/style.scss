@@ -6,12 +6,14 @@ $bg-color:#d3d3d3;
 $txt-color:#272a31;
 $title-color:#d62828;
 
+html,
 body {
   overflow-x: hidden;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background: url("img/back3.jpg"), linear-gradient(#d3d3d3, #d3d3d3);
+  width: 100%;
+  height: 100%;
 
   /* W3C */
   font-family: $lato;
@@ -37,12 +39,14 @@ img {
   height: auto;
   margin: 0 auto;
   padding: 20px 15px;
+  overflow-x: hidden;
   background-color: #f3f3fa;
 }
 
 header {
   background-color: #fff;
   height: 70px;
+  width: 100%;
 
   nav {
     display: flex;
@@ -473,7 +477,7 @@ header {
 }
 
 .home-pg {
-  min-height: 70vh;
+  width: 100%;
   position: relative;
   background-image: url('../img/desk.png');
   background-position: center;
@@ -626,7 +630,18 @@ header {
 }
 
 @media (max-width: 768px) {
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+  }
+
   header {
+    width: 100%;
+
     nav {
       position: relative;
 
@@ -822,6 +837,7 @@ header {
 
   .program {
     width: 100%;
+    margin: 50px auto;
     text-align: center;
     padding: 40px 0;
     align-items: center;
@@ -846,8 +862,8 @@ header {
     .program-items {
       display: flex;
       flex-direction: column;
-      justify-content: start;
-      gap: 20px;
+      justify-content: center;
+      column-gap: 20px;
       width: 80%;
       margin: 40px auto;
 
@@ -856,7 +872,7 @@ header {
         text-align: start;
         justify-content: center;
         align-items: center;
-        gap: 15px;
+        row-gap: 15px;
         padding: 10px 15px;
         background-color: #292626;
 
@@ -896,7 +912,7 @@ header {
   }
 
   .team-section {
-    margin: 50px 0;
+    margin: 50px auto;
     width: 100%;
 
     h2 {
@@ -913,7 +929,7 @@ header {
     }
 
     .see-more {
-      width: 80%;
+      width: 70%;
       border: 1px solid #8a817c;
       display: block;
       margin: 10px auto;
@@ -943,14 +959,14 @@ header {
       align-items: center;
       display: grid;
       grid-template-columns: 1fr;
-      gap: 30px;
+      column-gap: 30px;
 
       .team {
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        gap: 20px;
+        row-gap: 20px;
 
         .image-div {
           position: relative;
@@ -1073,7 +1089,7 @@ header {
   }
 
   .home-pg {
-    margin: 0 auto;
+    margin: 10px auto;
     width: 100%;
     justify-content: center;
     align-items: center;
@@ -1082,29 +1098,20 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
 
-    .r4 {
-      top: 100px;
-      right: 5%;
-    }
-
-    .r1 {
-      width: 200px;
-      height: 200px;
-    }
-
     .content-sec {
       display: flex;
-      width: 100%;
+      width: 90%;
       justify-content: center;
       flex-direction: column;
       align-items: center;
-      margin: 20px 0;
+      margin: 20px auto;
 
       .descript-sec {
-        width: 100%;
+        width: 90%;
         justify-content: center;
         align-items: center;
         text-align: center;
+        margin: 0 auto;
 
         .welcome {
           font-family: $goose;
@@ -1156,7 +1163,9 @@ header {
 
       .image-sec {
         width: 100%;
-        margin-top: 40px;
+        justify-content: center;
+        align-items: center;
+        margin: 20px auto;
 
         .btn {
           width: 100%;
@@ -1188,8 +1197,9 @@ header {
             h5 {
               position: absolute;
               color: $title-color;
-              font-size: 20px;
+              font-size: 17px;
               top: 15px;
+              text-align: center;
 
               span {
                 color: blue;

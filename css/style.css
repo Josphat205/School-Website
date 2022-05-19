@@ -1,9 +1,11 @@
-body {
+body,
+html {
   overflow-x: hidden;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background: url("img/back3.jpg"), linear-gradient(#d3d3d3, #d3d3d3);
+  width: 100%;
+  height: 100%;
 
   /* W3C */
   font-family: "Lato", sans-serif;
@@ -29,12 +31,14 @@ img {
   height: auto;
   margin: 0 auto;
   padding: 20px 15px;
+  overflow-x: hidden;
   background-color: #f3f3fa;
 }
 
 header {
   background-color: #fff;
   height: 70px;
+  width: 100%;
 }
 
 header nav {
@@ -455,7 +459,7 @@ header nav ul li a:hover {
 }
 
 .home-pg {
-  min-height: 70vh;
+  width: 100%;
   position: relative;
   background-image: url("../img/desk.png");
   background-position: center;
@@ -606,6 +610,19 @@ header nav ul li a:hover {
 }
 
 @media (max-width: 768px) {
+  html,
+  body {
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  header {
+    width: 100%;
+  }
+
   header nav {
     position: relative;
   }
@@ -798,6 +815,7 @@ header nav ul li a:hover {
 
   .program {
     width: 100%;
+    margin: 50px auto;
     text-align: center;
     padding: 40px 0;
     align-items: center;
@@ -823,8 +841,8 @@ header nav ul li a:hover {
   .program .program-items {
     display: flex;
     flex-direction: column;
-    justify-content: start;
-    gap: 20px;
+    justify-content: center;
+    column-gap: 20px;
     width: 80%;
     margin: 40px auto;
   }
@@ -834,7 +852,7 @@ header nav ul li a:hover {
     text-align: start;
     justify-content: center;
     align-items: center;
-    gap: 15px;
+    row-gap: 15px;
     padding: 10px 15px;
     background-color: #292626;
   }
@@ -872,7 +890,7 @@ header nav ul li a:hover {
   }
 
   .team-section {
-    margin: 50px 0;
+    margin: 50px auto;
     width: 100%;
   }
 
@@ -890,7 +908,7 @@ header nav ul li a:hover {
   }
 
   .team-section .see-more {
-    width: 80%;
+    width: 70%;
     border: 1px solid #8a817c;
     display: block;
     margin: 10px auto;
@@ -920,7 +938,7 @@ header nav ul li a:hover {
     align-items: center;
     display: grid;
     grid-template-columns: 1fr;
-    gap: 30px;
+    column-gap: 30px;
   }
 
   .team-section .team-members .team {
@@ -928,7 +946,7 @@ header nav ul li a:hover {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    row-gap: 20px;
   }
 
   .team-section .team-members .team .image-div {
@@ -1039,7 +1057,7 @@ header nav ul li a:hover {
   }
 
   .home-pg {
-    margin: 0 auto;
+    margin: 10px auto;
     width: 100%;
     justify-content: center;
     align-items: center;
@@ -1049,30 +1067,21 @@ header nav ul li a:hover {
     background-size: cover;
   }
 
-  .home-pg .r4 {
-    top: 100px;
-    right: 5%;
-  }
-
-  .home-pg .r1 {
-    width: 200px;
-    height: 200px;
-  }
-
   .home-pg .content-sec {
     display: flex;
-    width: 100%;
+    width: 90%;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    margin: 20px 0;
+    margin: 20px auto;
   }
 
   .home-pg .content-sec .descript-sec {
-    width: 100%;
+    width: 90%;
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin: 0 auto;
   }
 
   .home-pg .content-sec .descript-sec .welcome {
@@ -1124,7 +1133,9 @@ header nav ul li a:hover {
 
   .home-pg .content-sec .image-sec {
     width: 100%;
-    margin-top: 40px;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
   }
 
   .home-pg .content-sec .image-sec .btn {
@@ -1159,8 +1170,9 @@ header nav ul li a:hover {
   .home-pg .content-sec .image-sec .btn .click-here h5 {
     position: absolute;
     color: #d62828;
-    font-size: 20px;
+    font-size: 17px;
     top: 15px;
+    text-align: center;
   }
 
   .home-pg .content-sec .image-sec .btn .click-here h5 span {

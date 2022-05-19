@@ -6,12 +6,14 @@ $bg-color:#d3d3d3;
 $txt-color:#272a31;
 $title-color:#d62828;
 
+html,
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background: url("img/back3.jpg"), linear-gradient(#d3d3d3, #d3d3d3);
   overflow-x: hidden;
+  width: 100%;
+  height: 100%;
 
   /* W3C */
   font-family: $lato;
@@ -370,7 +372,7 @@ header {
       }
 
       .intake {
-        margin: 80px 0;
+        margin: 80px auto;
 
         h4 {
           font-size: 20px;
@@ -463,6 +465,16 @@ header {
 }
 
 @media (max-width: 768px) {
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+  }
+
   header {
     nav {
       position: relative;
@@ -766,6 +778,11 @@ header {
             font-weight: 600;
             line-height: 20px;
           }
+        }
+
+        .intake {
+          width: 90%;
+          margin: 0 auto;
         }
       }
 
