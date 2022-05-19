@@ -99,6 +99,36 @@ header {
   }
 }
 
+.topnav {
+  background-color: #020310;
+
+  .top {
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+
+    ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      li {
+        color: white;
+        padding-right: 20px;
+
+        a {
+          color: white;
+          text-decoration: none;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+
 .footer {
   width: 70%;
 
@@ -651,6 +681,10 @@ header {
         }
       }
     }
+  }
+
+  .topnav {
+    display: none;
   }
 
   .footer {
