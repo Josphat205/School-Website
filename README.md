@@ -47,7 +47,7 @@ Options:
 3. Submit Pull Request with comprehensive description of changes
 
 ## Link to the Video
-[![Video](https://www.loom.com/share/cc0c095b63c1428489cd77454c7948b2)](https://www.loom.com/share/cc0c095b63c1428489cd77454c7948b2)
+- Click here to watch the Video [![Video](https://www.loom.com/share/cc0c095b63c1428489cd77454c7948b2)](https://www.loom.com/share/cc0c095b63c1428489cd77454c7948b2)
 
 ## **Acknowledgements**
 
