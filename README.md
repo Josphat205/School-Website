@@ -46,6 +46,9 @@ Options:
 2. Make changes and test
 3. Submit Pull Request with comprehensive description of changes
 
+## Link to the Video
+![click here to see video](https://www.loom.com/share/cc0c095b63c1428489cd77454c7948b2)
+
 ## **Acknowledgements**
 
 - [@Josphat205](git@github.com:Josphat205/School-Website.git) for logo and UI design assistance.
