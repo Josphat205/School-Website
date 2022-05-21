@@ -26,21 +26,21 @@ nav.addEventListener('click', () => {
 
 const staff = [
   {
-    image: '../img/t7.jpeg',
+    image: 'img/t7.jpeg',
     name: 'Jane Bellow',
     department: 'Senior Teacher',
     description:
       'My duties include assigning homework, grading tests, documenting progress and keeping up with parent communication',
   },
   {
-    image: '../img/t2.jpeg',
+    image: 'img/t2.jpeg',
     name: 'William Great',
     department: 'School Principle and Senior Administrator',
     description:
       'My duties include assigning homework, grading tests, documenting progress and keeping up with parent communication',
   },
   {
-    image: '../img/t6.jpeg',
+    image: 'img/t6.jpeg',
     name: 'Mercy Greary',
     department: 'Human Resource Manager',
     description:
@@ -48,21 +48,21 @@ const staff = [
   },
 
   {
-    image: '../img/s1.jpg',
+    image: 'img/s1.jpg',
     name: 'Hellen Johnson',
     department: 'Academic Director and Exam Controller',
     description:
       'My duties include assigning homework, grading tests, documenting progress and keeping up with parent communication',
   },
   {
-    image: '../img/t1.jpeg',
+    image: 'img/t1.jpeg',
     name: 'Victor Wise',
     department: 'Lab Technician and Computer Expert',
     description:
       'My duties include assigning homework, grading tests, documenting progress and keeping up with parent communication',
   },
   {
-    image: '../img/s2.jpg',
+    image: 'img/s2.jpg',
     name: 'Veronica Mwalia',
     department: 'Disciplinary Master and Enviromental Manager',
     description:
